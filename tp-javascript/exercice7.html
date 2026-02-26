@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1> Calculatrice de cercle</h1>
+    <div id="rayon"></div>
+    <div id="perimetre"></div>
+    <div id="surface"></div>
+    <script>
+      const PI=Math.PI;
+      let rayon=prompt("donne le rayon de cercle");
+      let primetre=2 * PI * rayon;
+      let surface = PI * rayon * rayon;
+      document.getElementById("rayon").innerHTML=`Le **rayon** :${rayon}`;
+      document.getElementById("perimetre").innerHTML=`Le **périmètre** :${primetre.toFixed(2)} cm`;
+      document.getElementById("surface").innerHTML=`La **surface** :${surface.toFixed(2)} cm²`;
+
+
+
+    </script>
+  </body>
+</html>
